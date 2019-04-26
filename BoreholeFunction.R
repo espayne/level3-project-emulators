@@ -98,9 +98,9 @@ for(i in 1:49901){
 plot(rRange, yr, type = "l", lty = 1,main="r")
 
 #Changing Hu
-HuRange <- seq(from = 990, 1100, by = 1)
-yHu <- rep(0, length.out = 201)
-for(i in 1:201){
+HuRange <- seq(from = 990, 1110, by = 1)
+yHu <- rep(0, length.out = 121)
+for(i in 1:121){
   yHu[i] <- borehole(c(0.1, 7.71, 89335, HuRange[i], 89.55, 760, 1400, 10950))
 }
 

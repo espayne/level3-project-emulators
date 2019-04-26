@@ -80,7 +80,6 @@ for(i in 1:1000){
 
 covmatrix <- cbind(covmatrixPart1,covmatrixPart2)
 #..............................................................................
-#Now fingers crossed I am hoping to piece this together and get the emulator AH FINGERS CROSSED
 
 exp.x.vals <- rep(0,1000)
 var.x.vals <- rep(0,1000)

@@ -62,7 +62,7 @@ for(i in 1:5){
 varDPart3 <- matrix(nrow = 5, ncol = 5)
 for(i in 1:5){
   for(j in 1:5){
-    varDPart3[i,j] = varu^2 * 2/(theta^2) * (xpoints1[i]-xpoints1[j]) * exp(-(distmatrix[i,j])^2 / (theta^2))
+    varDPart3[i,j] = varu^2 * 2/(theta^2) * (x1points[i]-x1points[j]) * exp(-(distmatrix[i,j])^2 / (theta^2))
   }
 }
 

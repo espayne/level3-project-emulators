@@ -98,7 +98,7 @@ var.z.est <- rep(0,2500)
 #Simulation for the Bayes Linear equations
 for(i in 1:50){
   for(j in 1:50){
-    covvector = c(covmatrixPart1(c(x[i],y[j])), covmatrixPart2(c(x[i],y[j])))
+    covvector = c(covmatrixPart1(c(x1[i],x2[j])), covmatrixPart2(c(x1[i],x2[j])))
     vals = 50 * (i-1) + j
     var.z.est[vals] = varu^2 - (covvector %*% solve(varDmatrix) %*% covvector)
     exp.z.est[vals] = covvector %*% solve(varDmatrix) %*% (D-0)
